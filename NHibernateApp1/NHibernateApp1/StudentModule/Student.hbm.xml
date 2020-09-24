@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--程序集,映射的类的命名空间-->
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" auto-import="true" assembly="NHibernateApp1" namespace="NHibernateApp1.StudentClass">
+  <!--类映射的表-->
+  <class name="Student" table="student">
+    <!--主键-->
+    <id name="Stuid" column="sid" type="Int32">
+      <!--主键类型-->
+      <generator class="identity"></generator>
+    </id>
+    <!--属性-->
+    <property name="Stuname" column="sname" type="String"></property>
+    <property name="Stuscore" column="score" type="Int32"></property>
+  </class>
+</hibernate-mapping>
